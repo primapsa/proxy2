@@ -20,7 +20,7 @@ const nextConfig = {
         destination: `https://api.themoviedb.org/3/genre/movie/list`,
       },
       {
-        source: 'proxy/img/:path*',
+        source: '/proxy/img/:path*',
         destination: `https://image.tmdb.org/t/p/:path*`,
       },
     ];
