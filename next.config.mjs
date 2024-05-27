@@ -8,10 +8,6 @@ const nextConfig = {
         destination: `https://api.themoviedb.org/3/movie/:path*`,
       },
       {
-        source: 'proxy/img/:path*',
-        destination: `https://api.themoviedb.org/:path*`,
-      },
-      {
         source: '/proxy/movies:path*',
         destination: `https://api.themoviedb.org/3/discover/movie:path*`,
       },
