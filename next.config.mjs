@@ -8,7 +8,7 @@ const nextConfig = {
         destination: `https://api.themoviedb.org/3/movie/:path*`,
       },
       {
-        source: '/img/:path*',
+        source: 'proxy/img/:path*',
         destination: `https://api.themoviedb.org/:path*`,
       },
       {
@@ -18,6 +18,10 @@ const nextConfig = {
       {
         source: '/proxy/genres',
         destination: `https://api.themoviedb.org/3/genre/movie/list`,
+      },
+      {
+        source: 'proxy/img/:path*',
+        destination: `https://image.tmdb.org/t/p/:path*`,
       },
     ];
   },
